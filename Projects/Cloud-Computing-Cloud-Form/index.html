@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="./CSS/Form.css">
+  <script src="./JavaScript/Controller.js"></script>
+</head>
+<body>
+    <form>
+    <!-- This is for the Business size-->
+    <label for="bsize" id="bsizelabel">Your Business Size: </label>
+    <select id="bsize" name="bsize">
+      <option value="smallMedium">Small or Medium</option>
+      <option value="large">Large</option>
+      <option value="national">National</option>
+      <option value="international">International</option>
+    </select>
+    <br>
+    <!-- This is for the budget-->
+
+    <label for="budget" id="budgetlabel">Your Budget: </label>
+    <select id="budget" name="budget">
+      <option value="low">Small (Less than £400,000)</option>
+      <option value="medium">Medium (Between £400,000 and £4,999,999)</option>
+      <option value="large">High (Between £5,000,000 and 14,999,999)</option>
+      <option value="vlarge">Very high (£15,000,000+)</option>
+    </select>
+    <!-- This is for the security requirements-->
+    <br>
+    <label for="security" id="securitylabel">Security Requirement: </label>
+    <select id="security" name="security">
+        <option value="low">Low (Public information)</option>
+        <option value="medium">Medium (sensitive data)</option>
+        <option value="high">High (confidential data)</option>
+      </select>
+    <!-- This is for scaling requirements-->
+    <br>
+    <p id="scalinglabel">Does your business require scaling?</p>
+    <input type="radio" id ="rb" name="scaling" value="true">
+    <label for="scaling" id="rbl">Yes</label> <br>
+    <input type="radio" name="scaling" value="false" id="rb">
+    <label for="scaling" id="rbl">No</label>
+
+   <!-- <label for="custom">Custom needs</label><br/>
+    <input type="text" id="custom" name="custom"/><br/>
+
+    <br>
+
+    <label for="maintenance">Maintenance requirements</label><br/>
+    <input type="text" id="maintenance" name="maintenance"/><br/>
+     This is for the maintenance requirements
+
+    <br>
+
+    <label for="performance">Performance requirements</label><br/>
+    <input type="text" id="performance" name="performance"/><br/>
+     This is for the performance requirements -->
+    </form>
+    
+    <br>
+    <button id="submitb" onclick="Submit()">Submit</button>
+    <button id="resetb" style="visibility: hidden" onclick="Reset()">Reset</button>
+    <button id="docb" onclick="redirectDocumentation()">Documentation</button>
+    <h2 style="visibility: hidden;" id="resTitle">The service we recommend is:</h2> 
+    <p style="visibility: hidden;" id="Result">{Doc.Result}</p>
+</body>

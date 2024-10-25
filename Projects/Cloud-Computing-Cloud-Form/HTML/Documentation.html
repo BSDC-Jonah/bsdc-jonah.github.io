@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="../CSS/Form.css">
+    <script src="../JavaScript/Controller.js"></script>
+</head>
+<body>
+    <p class="documentationP">Hi! Welcome to Documentation! <br>
+        This will detail the basics of how this webpage works! <br>
+        <br>
+        Each possible answer for each question adds somewhere between 1 and 4 points <br>
+        Top answer (usually the lowest) will add 1 point, the last answer will add 3-4 (except for scaling where it's 2) <br>
+        The program will count up these points, and using a fixed Point to Answer system, give you a recommended result based on the entries <br>
+        This result will be displayed on the page just below where the submit button is which upon Submitting will change to reset which will reset all the inputs and variables <br>
+        <br>
+        File Structure Breakdown: <br>
+        CSS/ is a folder which holds any/all the CSS files used <br>
+        CSS/Form.css is the only CSS used for this page and the Form page. Styles the HTML to be larger and nicer looking <br>
+        HTML/ is a folder which holds any/all of the HTML files including the HTML for this page and the form page. <br>
+        HTML/Documentation.html is this page's HTML, holds all the elements used on this page. <br>
+        HTML/Form.html is the form page's HTML, holds all elements used on that page, the main page. <br>
+        JavaScript/ is a folder which holds any/all of the JavaScript files using for the backend programming. <br>
+        JavaScript/Controller.js is the only and main JavaScript for the Form.html file. <br>
+        <br>
+        JavaScript Functions Breakdown: <br>
+        Radio() | This function is needed to find the answer to which radio button is selected and returns the selection to the calle (requesting item). <br>
+        sendRequest() | This function is needed to show the answer on the page and changing the Submit button to Reset button. <br>
+        getPoints() | This function is critical for the program. This finds all the results of elements on the Form page and uses them to calculate and add points to be used to determine final result. It returns the total points as Integer.<br>
+        getFinalJudgement() | This function is also critical for the program. It takes the return value from getPoints() and compares the total to the ranges for each type of Cloud Technology type and calls sendRequest() to then display this answer. <br>
+        Submit() | This function is called by the Submit button to begin running the program. It also checks to ensure theres a value for each entry before running the program and then calls getFinalJudgement(getPoints()). <br>
+        Reset() | This function is called by the Reset button and it resets all entries and variables to allow for resubmission. <br>
+        redirectDocumentation() | This function is used to redirect you to this page "Documentation". <br>
+        backToForm() | This function is used to redirect you back to the Form page which is the main page. <br>
+    </p>
+    <button id="documentationReturn" onclick="backToForm()">Return</button> 
+</body>
+</html>

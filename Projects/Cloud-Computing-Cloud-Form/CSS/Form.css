@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+}
+
+#bsizelabel {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+}
+
+#budgetlabel {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+}
+
+#securitylabel {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+}
+
+#scalinglabel {
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+}
+
+#bsize {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+#budget {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+#security {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+#rbl {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    size: 40px;
+    position: relative;
+    left: 1.1%
+}
+
+#rb {
+    border: 0px;
+    transform: scale(3.5);
+    position: relative;
+    left: 0.25%;
+}
+
+#submitb {
+    color: white;
+    text-align: center;
+    transform: scale(3);
+    position: fixed;
+    left: 3%;
+    top: 45%
+}
+
+#resetb {
+    color: white;
+    text-align: center;
+    transform: scale(3);
+    position: fixed;
+    left: 3%;
+    top: 45%
+}
+
+#resTitle {
+    position: absolute;
+    font-size: 35px;
+    color: white;
+    bottom: 40%;
+}
+
+#Result {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 35%;
+}
+
+#docb {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    transform: scale(3);
+    position: fixed;
+    left: 5.5%;
+    top: 70%
+}
+
+#documentationReturn {
+    scale: 3.5;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+}
+
+.documentationP {
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+}
