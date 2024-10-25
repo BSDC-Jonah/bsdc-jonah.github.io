@@ -96,4 +96,4 @@ function Submit() { // Function called by HTML Submit button to start the progra
 
 function Reset() {location.reload()}
 function redirectDocumentation() {location.assign('./HTML/Documentation.html')}
-function backToForm() {location.assign('../index.html')}
+function backToForm() {location.assign('/Projects/Cloud-Computing-Form')}
