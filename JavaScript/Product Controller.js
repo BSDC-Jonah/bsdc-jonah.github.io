@@ -10,8 +10,9 @@ function productCheck(reqProductName) {
     const results = []
     for (let i = 0; i < products.length; i++) {
         if (products[i].productName == reqProductName)
-            return true
+            results.push(products[i])
     }
+    return results
 }
 
 function addProduct(productName="", productDescription="", Image=0, productPrice=0.00) {
