@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    border: 2px red solid;
-}
-
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
