@@ -6,7 +6,7 @@
 const products = []
 
 if (localStorage.getItem('productsSave') =~ null) {
-    products = localStorage.getItem('productsSave')
+    products = JSON.parse(localStorage.getItem('productsSave'))
 }
 
 function productCheck(reqProductName) {
@@ -67,12 +67,14 @@ function insertProduct(productName="", productDescription="", Image=0, productPr
     }
     else {
         // Code
+        const Container = document.getElementById('productsContainer')
+        const ele = document.createElement()
     }
 }
 
 function saveProducts() {
     try {
-        localStorage.setItem('productsSave', products)
+        localStorage.setItem('productsSave', JSON.stringify(products))
     }
     catch {
         console.error('Product Controller: An error occured while saving products array. Error 289')
