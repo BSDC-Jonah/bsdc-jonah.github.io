@@ -4,10 +4,10 @@
 // JSON.parse() needed for localstorage array save retrival
 // See here: https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
 
-const products = []
+const products = [] // The storage array of objects for each product.
 
 if (localStorage.getItem('productsSave') =~ null) {
-    products = JSON.parse(localStorage.getItem('productsSave'))
+    products = JSON.parse(localStorage.getItem('productsSave')) // Gets the saved products from LocalStorage.
     for (let i = 0; i<products.length; i++) {
     insertProduct(products[i])
     }
@@ -82,7 +82,7 @@ function insertProduct(productName="", productDescription="", Image=0, productPr
 
 function saveProducts() {
     try {
-        localStorage.setItem('productsSave', JSON.stringify(products))
+        localStorage.setItem('productsSave', JSON.stringify(products)) // Saves the products to LocalStorage.
     }
     catch {
         console.error('Product Controller: An error occured while saving products array. Error 289')
@@ -122,7 +122,7 @@ function testCreateProduct() {
 
 function clearLocalStorage() {
     try {
-        localStorage.clear()
+        localStorage.clear() // Removes all saves from LocalStorage.
     }
     catch {
         console.error('Product Controller: An error occured while clearing local storage')
@@ -131,7 +131,7 @@ function clearLocalStorage() {
 
 function clearProductSave() {
     try {
-        localStorage.removeItem('productsSave')
+        localStorage.removeItem('productsSave') // Removes just the Products save from LocalStorage.
     }
     catch {
         console.error('Product Controller: An error occured while clearing Products Save.')
@@ -146,7 +146,7 @@ function refreshProducts() {
     }
     // Refresh
     // Get from storage
-    if (localStorage.getItem('productsSave') =~ null) {
+    if (localStorage.getItem('productsSave') != null) {
         products = JSON.parse(localStorage.getItem('productsSave'))
     }
     // Insert all
