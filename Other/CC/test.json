@@ -1,0 +1,22 @@
+{
+    "websiteData": {
+        "totalTimesVisited": 0,
+        "saved_hasAccess": false,
+        "saved_webLocalStorageArr":[],
+        "saved_cache":[]
+    },
+    "Logins": [
+        {"user":"Admin", "pass":"Admin"}
+    ],
+    "$active":{
+        "activeUser":"",
+        "activePass":"",
+        "activeCacheData":[]
+    },
+    "useableKeys":["JSON-WebsiteStorage-ExternalLoad-jhhgkjhrjhjkaHKJRTHERKTjrhy", "JSON-WebsiteStorage-ExternalLoad-sdSooPiu5n5FH5h65546h"],
+    "key":"JSON-WebsiteStorage-ExternalLoad-ASddRTYIoPmPLoBVVcaA",
+    "keyCode":"JSON-ELWS-72259963144",
+    "originatingSource":"External-JSON",
+    "originatingLocation":"External",
+    "bye":"Bye, thanks for using JSON file save"
+}
