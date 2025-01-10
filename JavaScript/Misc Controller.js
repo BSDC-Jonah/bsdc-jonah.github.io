@@ -6,10 +6,10 @@
 // Instagram Class: I-B
 // YouTube Class: YT-B
 
-let FBB = document.getElementsByClassName('FB-B')
-let XB = document.getElementsByClassName('X-B')
-let IB = document.getElementsByClassName('I-B')
-let YTB = document.getElementsByClassName('YT-B')
+let FBB = document.getElementById('FB-B')
+let XB = document.getElementById('X-B')
+let IB = document.getElementById('I-B')
+let YTB = document.getElementById('YT-B')
 
 FBB.addEventListener('click', function() {
     // Code

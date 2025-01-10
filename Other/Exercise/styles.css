@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    height: 100%;
+    width: auto;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+table {
+    border: 1px solid red;
+    padding: 2px;
+}
+
+th {
+    border: 2px solid green;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+.NavBar {
+    position: sticky;
+    background-color: white;
+    top: 0px;
+    border: 2px solid #4CAF50;
+}
+
+a {
+    position: relative;
+}   

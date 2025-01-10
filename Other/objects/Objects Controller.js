@@ -69,7 +69,6 @@ function insertPerson() {
     let namePro = window.prompt('Enter the persons name');
     let agePro = window.prompt('Enter the persons age');
     let markPro = window.prompt('Enter the persons mark: (true/false)')
-    let 
 }
 
 updateTable()

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handler</title>
+    <link rel="stylesheet" href="https://bsdc-jonah.github.io/Assets/Index.css"> <!--Normalising CSS-->
+</head>
+<style>
+    body {color: rgb(21, 255, 0);background-color: black;}
+    h1 {font-size: 600%;}
+    h2 {font-size: 400%;}
+    button {font-size: 400%; background: none; color: magenta; border: 2px red solid;}
+</style>
+<body onbeforeunload="unload()">
+    <h1 id="errorTitle">{Error.Title}</h2>
+    <h2 id="errorDescription">{Error.Description}</h2>
+    <button onclick="returnFunc()">Return</button>
+</body>
+<script src="../JavaScript/Controller.js"></script>
+<script src="../JavaScript/Error Controller.js"></script>
+</html>
