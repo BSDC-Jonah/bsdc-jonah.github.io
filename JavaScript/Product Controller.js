@@ -46,7 +46,7 @@ function insertProduct(productName="", productDescription="", Image=0, productPr
         // Apply a default image
     }
     else if (productPrice == 0.00) {
-        console.error('Product Controller: addProduct() called but "productPrice" not provided')
+        console.error('Product Controller: addProduct() called but "productPrice" not provided Error 282')
         stop()
     }
     else {

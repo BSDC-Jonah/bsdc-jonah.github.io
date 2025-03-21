@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonah Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="body" onbeforeunload="saveTheme()"; onload="loadSave()">
+    <header>
+        <h1>Jonah Robinson</h1>
+      </header>
+      <section>
+        <article>
+          <h2>About Me</h2>
+          <p id="bolden">Web Developer | IT Support | Passionate for both of these</p>
+        </article>
+        <article>
+            <h2>My Skills</h2>
+            <p id="bolden"> My Skills Include: <br>
+                - Making JavaScript work on the backend of website <br>
+                - Created the source code behind the Change Theme <br>
+                - Theme change saves, whatever theme you was last on will be loaded when you reload. :3 <br>
+                - Made this website >:)
+            </p>
+          </article>
+          <article>
+            <h2>Your current theme</h2>
+            <p id="currTheme">Your current theme is: {JS.load}</p>
+            <p id="savedTheme">Your current saved theme is: N/A</p>
+          </article>
+        <button class='button' onclick="themeChange()">Change Theme</button>
+      </section>
+</body>
+<script src="./SEFB Controller.js"></script>
+</html>
