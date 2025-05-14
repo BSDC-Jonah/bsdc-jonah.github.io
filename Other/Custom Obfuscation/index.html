@@ -6,10 +6,11 @@
     <title>Jonahs Obfuscator</title>
 </head>
 <body>
-    <p>The obfuscated string will copy to clipboard after you press obfuscate!</p>
+    <p>The obfuscated/deobfuscated string will copy to clipboard after you press obfuscate!</p>
     <form id="formID" onsubmit="event.preventDefault()">
-        To Obfuscate: <br> <input type="textarea" id="toObfuscate" rows="20" cols="40" placeholder="This text will be obfuscated!"> <br>
+        To Obfuscate: <br> <input type="textarea" rows="5000" cols="500" id="toObfuscate" placeholder="This text will be used!"> <br>
         <button id="obfuscateButton">Obfuscate Text</button>
+        <button id="deObfuscateButton">DeObfuscate Text</button>
     <script src="./Handler.js"></script>
     </form>
 </body>
