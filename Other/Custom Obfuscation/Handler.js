@@ -1,0 +1,30 @@
+const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M','N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const LargeStrings = ["hMGF1PVMRhLCTpPdqs7Q9mzN6eGDjX","rb4OgRbpM8IgMiY5BpsD4lusV2qrRb","eTTEUPahfJVBuMl2aJ6J0e7yfMjtqf","GWxPlEdqmnTjKcj89KWed1CUKLFgIq","5fE3sPvkLMhHOsDaoiTRMFBkMqJazV","LQwvJWgX5sYSCmzgfpsKGeh8k5jyf4","XKzAzneCSfy5B65OZ8FsCnhDdvxkwT","R9RMOQhupZdzqgqG0bornzf1KKs14x","XoPM7ZtUy405mmHDUXEfgqz5BjjTxB","oQkx30KUBk8RbHHtg54oZ1EQgaF8ct","MgTpFs23rDMl17hHBHwXTVfqYdc0el","bVkTpggYfJbf2PEjHPSSlbg3aCqW2R","dNkTjW8dEzmUXmStaXuLUbmcI39ThQ","W5E7xbyai5ppxnKlmjymh0jI67i0kp","hTXXJxDBjrA9U5JQGfM4Fm1JSFfn4U","YujR0i4x0cck7bUvwAmHzxSBIFt5IH","EbMB2jiWIFRG63c0zB96Al3SGE7xNd","MdvvjEIlkvn4jIuEoI77ML4m7Mswmf","ZAnSJhL4nO1l2jKZYhVGUCxLEnuaPI","qlVoloZ60Ta1lCDNK1fIzbzWhStJqM","Kefdr8QtCn8qELmCmq1SbigSp16Ryr","hL6QHCxDvjzAi38eKy24ciTpendpx3","NCLXPNp2g55ulIU2oxzeMxDsCvzfN0","2WaQVGd6GTSvQrpZDBXIW2icQOJjUX","HRc6BqVk3nYBZS1oPGvlMfVlhPFzjp","ejgTYGlUgTVJoUROjSTHWSnVQqRWOX","KWEE4QOK5h46wv30OXJFyd7dD7ZVSS","vHN9cLpE0kcmGNrbemnXFKipRR34HN","77InJTgoC3S0XWTqilaVNI7hT3Qxqu","K8zMilbHHrY9AG2wWXhdiGpqNtuZo8",]
+const smallStrings = ["kP0aoFcw","q6U6OIaZ","T46KcrSD","jpubU8Py","6y1oiwYi","P42fHzQp","8BkybvDp","dyqMOWkm","sK6naYqE","OEHvj2Rh","uXP6SJl3","dJTrpcmP","kKvxNVQP","6aVVrMLf","hHwpcbq7","vlLCaQji","ZGYFsKU1","FAxTfnd3","CSeEceRq","bUVbsgva","wFYgqBdm","Xi1MP9MR","TClRaEhg","iycsJX72","lW43CYC6","tPLlsNyo","pUZCQ1YE","CPavBCSN","zyTSJm2M","eh2pwQNc",]
+const scrambleStrings = ["%^&", "@~:", "*%£", "£££", "$$$"]
+const stage1Finished = []
+
+function getRnd(maxNum) {
+    return Math.floor(Math.random() * maxNum);
+}
+
+function gR(tableID) {
+    return tableID[getRnd(tableID.length)]
+}
+function obfuscate(Text) {
+    let inputLength = Text.length;
+    if (Text !=null) {
+        function scramble() {
+            for (let a = 0; a<inputLength; a++) {
+                let currLetter = Text.charAt(a);
+                stage1Finished.push(`${gR(smallStrings)}${gR(scrambleStrings)}|${gR(alphabet)}|${gR(scrambleStrings)}--${currLetter}--${gR(alphabet)}--`)
+            }
+        }
+        console.log(scramble())
+    }
+    else {
+        console.error('Handler.js Error: obfuscate(): Text cannot be blank/empty.')
+    }
+}
+
+function deObfuscate(Text) {}
